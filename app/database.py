@@ -13,6 +13,7 @@ user2 = User(name=u'test', email='test@test.com', password='123456')
 user3 = User(name=u'test2', email='test2@test.com', password='123456')
 user4 = User(name=u'test3', email='test3@test.com', password='123456')
 
+# książki do zrobienia
 book1 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
              tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
              summary=u"""
