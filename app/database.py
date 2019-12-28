@@ -13,54 +13,54 @@ user2 = User(name=u'test', email='test@test.com', password='123456')
 user3 = User(name=u'test2', email='test2@test.com', password='123456')
 user4 = User(name=u'test3', email='test3@test.com', password='123456')
 
-# książki do zrobienia
-book1 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
-             tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
-             summary=u"""
-# Powieść Fiodora Dostojewskiego napisana w 1866 i w tym samym roku opublikowana w odcinkach w czasopiśmie „Russkij Wiestnik”. W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
 
-* W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
-* Tematem powieści są losy byłego studenta, Rodiona Raskolnikowa, który postanawia zamordować i obrabować starą lichwiarkę.
+book1 = Book(title=u"Sezon Burz", subtitle=u"Cykl wiedźmiński", author=u"Andrzej Sapkowski", isbn='9782811212995',
+             tags_string=u"Fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\sezon_burz.jpg',
+             summary=u"""
+# Akcja powieści rozgrywa się w świecie wiedźmińskim, w którym osadzona jest również fabuła Sagi o wiedźminie tego samego autora. Głównym miejscem, w którym rozgrywa się akcja jest królestwo Kerack oraz okoliczne ziemie.
+
+* Głównym bohaterem powieści jest wiedźmin Geralt z Rivii – najemny łowca potworów, za młodu poddany morderczemu treningowi i mutacjom w wiedźmińskiej warowni Kaer Morhen.
+* Ze względu na swoją odmienność (zmiany wyglądu spowodowane mutacją), jest traktowany przez społeczeństwo w najlepszym wypadku jako zło konieczne.
 """)
-book2 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
-             tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
+book2 = Book(title=u"Krew elfów", subtitle=u"Saga o wiedźminie", author=u"Andrzej Sapkowski", isbn='9788025905340',
+             tags_string=u"fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\krew_elfow.jpg',
              summary=u"""
-# Powieść Fiodora Dostojewskiego napisana w 1866 i w tym samym roku opublikowana w odcinkach w czasopiśmie „Russkij Wiestnik”. W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
+# Akcja powieści rozgrywa się – wedle określenia samego autora – w quasi-średniowiecznej allotopii i jest kontynuacją wcześniejszych opowiadań.
 
-* W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
-* Tematem powieści są losy byłego studenta, Rodiona Raskolnikowa, który postanawia zamordować i obrabować starą lichwiarkę.
+* Głównymi bohaterami powieści są Geralt z Rivii, wiedźmin, zawodowo trudniący się zabijaniem groźnych dla ludzi potworów,
+* oraz królewna Ciri, nastoletnia dziewczyna, która w wyniku wojny utraciła rodzinę i tron.
 """)
-book3 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
-             tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
+book3 = Book(title=u"Czas pogardy", subtitle=u"Saga o wiedźminie", author=u"Andrzej Sapkowski", isbn='9788498890532',
+             tags_string=u"fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\czas_pogardy.jpg',
              summary=u"""
-# Powieść Fiodora Dostojewskiego napisana w 1866 i w tym samym roku opublikowana w odcinkach w czasopiśmie „Russkij Wiestnik”. W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
+# Geralt w mieście Dorian spotyka się ze Codringherem, prywatnym detektywem i specjalistą od wszelkiej czarnej roboty, którego najął celem zdobycia informacji o czarowniku imieniem Rience.
 
-* W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
-* Tematem powieści są losy byłego studenta, Rodiona Raskolnikowa, który postanawia zamordować i obrabować starą lichwiarkę.
+* Czarodziejka Yennefer wraz z Ciri jadą do Gors Velen i dalej na Wyspę Thanedd.
+* W Hirundum spotykają się z Geraltem. Yennefer zamierza oddać Ciri do Szkoły Czarodziejek – Aretuzy.
 """)
-book4 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
-             tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
+book4 = Book(title=u"Chrzest ognia", subtitle=u"Saga o wiedźminie", author=u"Andrzej Sapkowski", isbn='9783423407090',
+             tags_string=u"fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\chrzest_ognia.jpg',
              summary=u"""
-# Powieść Fiodora Dostojewskiego napisana w 1866 i w tym samym roku opublikowana w odcinkach w czasopiśmie „Russkij Wiestnik”. W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
+# Wiedźmin Geralt po wyleczeniu się w lesie Brokilon i zaciągnięciu informacji od łuczniczki Milvy wyrusza wraz z Jaskrem, by uratować Ciri.
 
-* W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
-* Tematem powieści są losy byłego studenta, Rodiona Raskolnikowa, który postanawia zamordować i obrabować starą lichwiarkę.
+* Ruszają wzdłuż rzeki Wstążki na zachód w kierunku Verden. Wpadają na havekarów – kupców handlujących ze Scoia'tael, do których przybywa kilku nilfgaardzkich rycerzy.
+* Dochodzi do walki, w której Geraltowi i Jaskrowi z pomocą nagle nadciąga Milva.
 """)
-book5 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
-             tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
+book5 = Book(title=u"Wieża Jaskółki", subtitle=u"Saga o wiedźminie", author=u"Andrzej Sapkowski", isbn='9783423247863',
+             tags_string=u"fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\wieza_jaskolki.jpg',
              summary=u"""
-# Powieść Fiodora Dostojewskiego napisana w 1866 i w tym samym roku opublikowana w odcinkach w czasopiśmie „Russkij Wiestnik”. W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
+# Ranna i ledwo żywa Ciri zostaje odnaleziona na bagnach Pereplutu przez pustelnika Vysogotę z Corvo, który zaczyna się nią opiekować.
 
-* W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
-* Tematem powieści są losy byłego studenta, Rodiona Raskolnikowa, który postanawia zamordować i obrabować starą lichwiarkę.
+* Między młodą dziewczyną i starym wykładowcą oxenfurckiej uczelni stopniowo nawiązuje się przyjaźń.
+* Cirilla postanawia opowiedzieć mu swoją historię.
 """)
-book6 = Book(title=u"Zbrodnia i kara", subtitle=u"Bantam Classics", author=u"Fyodor Dostoyevski", isbn='9788897572657',
-             tags_string=u"Lektura szkolna", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\api\\static\\img\\C&P.jpg',
+book6 = Book(title=u"Pani Jeziora", subtitle=u"Saga o wiedźminie", author=u"Andrzej Sapkowski", isbn='9781473211605',
+             tags_string=u"fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\pani_jeziora.jpg',
              summary=u"""
-# Powieść Fiodora Dostojewskiego napisana w 1866 i w tym samym roku opublikowana w odcinkach w czasopiśmie „Russkij Wiestnik”. W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
+# Ciri dostaje się do władanego przez Auberona królestwa Aen Elle – Ludu Olch, po którym jej przewodnikiem staje się elf Avallac'h.
 
-* W formie książkowej ukazała się w 1867, a w Polsce wydano ją po raz pierwszy w latach 1887–1888.
-* Tematem powieści są losy byłego studenta, Rodiona Raskolnikowa, który postanawia zamordować i obrabować starą lichwiarkę.
+* Wiedźmińska drużyna opuszcza Caed Myrkvid, gdyż bytujący tam druidzi odmawiają jakiejkolwiek pomocy.
+* Kompania dociera do idyllicznego księstwa Toussaint, w którym Jaskier wdaje się w powtórny romans z księżną Anną Henriettą.
 """)
 logs = [Log(user1, book2), Log(user1, book3), Log(user1, book4), Log(user1, book6),
         Log(user2, book1), Log(user2, book3), Log(user2, book5),
