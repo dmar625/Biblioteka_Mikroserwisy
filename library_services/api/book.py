@@ -1,4 +1,4 @@
-from app.models import Book as model_Book
+from library_services.models import Book as model_Book
 from flask import url_for
 from flask_restful import Resource, marshal_with, abort
 from . import api, parser, default_per_page

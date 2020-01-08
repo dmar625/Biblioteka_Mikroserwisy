@@ -1,5 +1,5 @@
-from app import lm
-from app.models import User
+from library_services import lm
+from library_services.models import User
 from .index import main
 from .auth import auth
 from .user import user

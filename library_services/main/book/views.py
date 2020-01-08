@@ -1,5 +1,5 @@
-from app import db
-from app.models import Book, Log, Comment, Permission, Tag, book_tag
+from library_services import db
+from library_services.models import Book, Log, Comment, Permission, Tag, book_tag
 from flask import render_template, url_for, flash, redirect, request, abort
 from flask_login import current_user
 from . import book

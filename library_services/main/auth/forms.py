@@ -1,5 +1,5 @@
-from app import db
-from app.models import User
+from library_services import db
+from library_services.models import User
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms import ValidationError

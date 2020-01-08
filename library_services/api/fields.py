@@ -1,4 +1,4 @@
-from app.models import Log, Comment
+from library_services.models import Log, Comment
 from flask import url_for
 from flask_restful import fields
 from . import default_per_page

@@ -1,8 +1,8 @@
 from flask import render_template, url_for, flash, redirect, request, abort, g
 from flask_login import login_required, current_user
-from app.models import User, Log, Permission
+from library_services.models import User, Log, Permission
 from .forms import EditProfileForm, AvatarEditForm, AvatarUploadForm
-from app import db, avatars
+from library_services import db, avatars
 from . import user
 import json
 

@@ -1,5 +1,5 @@
-from app import app, db
-from app.models import User, Book, Log, Role
+from library_services import app, db
+from library_services.models import User, Book, Log, Role
 
 app_ctx = app.app_context()
 app_ctx.push()

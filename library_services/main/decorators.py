@@ -1,6 +1,6 @@
 from functools import wraps
 
-from app.models import Permission
+from library_services.models import Permission
 from flask import abort
 from flask_login import current_user
 

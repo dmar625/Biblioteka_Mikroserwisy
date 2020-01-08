@@ -3,7 +3,7 @@ import json
 from datetime import datetime, timedelta
 
 import bleach
-from app import db, lm, avatars
+from library_services import db, lm, avatars
 from flask import current_app, url_for
 from flask_login import UserMixin, AnonymousUserMixin
 from markdown import markdown

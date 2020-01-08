@@ -1,5 +1,5 @@
-from app import db
-from app.models import User, Book, Comment, Log, Permission
+from library_services import db
+from library_services.models import User, Book, Comment, Log, Permission
 from flask import render_template
 from flask_login import current_user
 from . import main

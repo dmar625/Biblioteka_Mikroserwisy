@@ -1,4 +1,4 @@
-from app.models import Book
+from library_services.models import Book
 from flask_pagedown.fields import PageDownField
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, IntegerField

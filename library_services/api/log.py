@@ -1,4 +1,4 @@
-from app.models import Log as model_Log
+from library_services.models import Log as model_Log
 from flask import url_for
 from flask_restful import Resource, marshal_with
 from . import api, parser, default_per_page
