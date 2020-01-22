@@ -52,12 +52,12 @@ class User(UserMixin, db.Model):
         return self.can(Permission.ADMINISTER)
 
     logs = db.relationship('Log',
-                           backref=db.backref('user', lazy='joined'),
+                           backref=db.backref('clients', lazy='joined'),
                            lazy='dynamic',
                            cascade='all, delete-orphan')
 
     comments = db.relationship('Komentarz',
-                               backref=db.backref('user', lazy='joined'),
+                               backref=db.backref('clients', lazy='joined'),
                                lazy='dynamic',
                                cascade='all, delete-orphan')
 

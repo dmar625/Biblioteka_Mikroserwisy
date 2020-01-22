@@ -13,7 +13,7 @@ def index():
     page = request.args.get('page', 1, type=int)
     pagination = User.query.order_by(User.id.desc()).paginate(page, per_page=10)
     users = pagination.items
-    return render_template("user.html", users=users, pagination=pagination, title=u"Zarejestrowany użytkownik")
+    return render_template("clients.html", users=users, pagination=pagination, title=u"Zarejestrowany użytkownik")
 
 
 @user.route('/<int:user_id>/')
@@ -47,7 +47,7 @@ def edit(user_id):
             db.session.add(the_user)
             db.session.commit()
             flash(u'Informacje zaaktualizowane pomyślnie', "info")
-            return redirect(url_for('user.detail', user_id=user_id))
+            return redirect(url_for('clients.detail', user_id=user_id))
         form.name.data = the_user.name
         form.major.data = the_user.major
         form.headline.data = the_user.headline
@@ -73,12 +73,12 @@ def avatar(user_id):
                 db.session.add(the_user)
                 db.session.commit()
                 flash(u'Zaaktualizowano avatar', 'success')
-                return redirect(url_for('user.detail', user_id=user_id))
+                return redirect(url_for('clients.detail', user_id=user_id))
         if avatar_edit_form.validate_on_submit():
             the_user.avatar = json.dumps({"use_out_url": True, "url": avatar_edit_form.avatar_url.data})
             db.session.add(the_user)
             db.session.commit()
-            return redirect(url_for('user.detail', user_id=user_id))
+            return redirect(url_for('clients.detail', user_id=user_id))
         return render_template('avatar_edit.html', user=the_user, avatar_edit_form=avatar_edit_form,
                                avatar_upload_form=avatar_upload_form, title=u"Zmień avatar")
     else:

@@ -5,7 +5,7 @@ from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
 from flask_pagedown import PageDown
 from flask_uploads import UploadSet, IMAGES, configure_uploads
-from library_services.main import main, auth, user, book, comment, log
+from library_services.base import main, auth, user, book, comment, log
 from library_services.api import api_bp
 from library_services import models
 

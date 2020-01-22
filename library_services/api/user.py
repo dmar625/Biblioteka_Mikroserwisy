@@ -10,7 +10,7 @@ class User(Resource):
     @marshal_with(user_detail_fields)
     def get(self, user_id):
         user = model_User.query.get_or_404(user_id)
-        user.uri = url_for('api.user', user_id=user_id, _external=True)
+        user.uri = url_for('api.clients', user_id=user_id, _external=True)
         return user
 
 

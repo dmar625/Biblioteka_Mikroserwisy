@@ -12,7 +12,7 @@ user_fields = {
     'about_me': fields.String,
     'about_me_html': fields.String,
     'avatar': fields.String(attribute=lambda x: x.avatar_url(_external=True)),
-    'uri': fields.String(attribute=lambda x: url_for('api.user', user_id=x.id, _external=True)),
+    'uri': fields.String(attribute=lambda x: url_for('api.clients', user_id=x.id, _external=True)),
 }
 user_list = {
     'items': fields.List(fields.Nested(user_fields)),
@@ -111,7 +111,7 @@ comment_list = {
     'per_page': fields.Integer,
 }
 comment_detail_fields = dict(comment_fields, **{
-    'user': fields.Nested(user_fields, attribute=lambda x: x.user),
+    'clients': fields.Nested(user_fields, attribute=lambda x: x.user),
     'book': fields.Nested(book_fields, attribute=lambda x: x.book),
 })
 
@@ -232,7 +232,7 @@ book_detail_fields = \
             }
          )
 
-logs_info_detail_fields = dict(logs_info_fields, **{'user': fields.Nested(user_fields, attribute=lambda x: x.user),
+logs_info_detail_fields = dict(logs_info_fields, **{'clients': fields.Nested(user_fields, attribute=lambda x: x.user),
                                                     'book': fields.Nested(book_fields, attribute=lambda x: x.book)})
 
 tag_detail_fields = dict(tag_fields, **{'books': fields.List(fields.Nested(book_fields), attribute=lambda x: x.books)})

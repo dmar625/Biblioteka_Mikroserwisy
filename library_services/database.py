@@ -8,7 +8,7 @@ Role.insert_roles()
 
 admin = User(name=u'darek', email='darek@gmail.com', password='password', major='administrator',
              headline=u"Nazywam się Darek", about_me=u"Jestem ownerem tej biblioteki.")
-user1 = User(name=u'Janusz', email='james@Gmail.com', password='123456', major='Informatyka', headline=u"Zwykły user")
+user1 = User(name=u'Janusz', email='james@Gmail.com', password='123456', major='Informatyka', headline=u"Zwykły clients")
 user2 = User(name=u'test', email='test@test.com', password='123456')
 user3 = User(name=u'test2', email='test2@test.com', password='123456')
 user4 = User(name=u'test3', email='test3@test.com', password='123456')

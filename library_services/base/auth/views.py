@@ -14,7 +14,7 @@ def login():
         if the_user is not None and the_user.verify_password(login_form.password.data):
             login_user(the_user, login_form.remember_me.data)
             flash(u'Udało Ci się zalogować, witaj %s!' % the_user.name, 'success')
-            return redirect(request.args.get('next') or url_for('main.index'))
+            return redirect(request.args.get('next') or url_for('base.index'))
         flash(u'Niepoprawna nazwa użytkownika lub hasło.', 'danger')
     return render_template("login.html", form=login_form, title=u"Zaloguj się")
 
@@ -24,7 +24,7 @@ def login():
 def logout():
     logout_user()
     flash(u'Wylogowano.', 'info')
-    return redirect(url_for('main.index'))
+    return redirect(url_for('base.index'))
 
 
 @auth.route('/register/', methods=['GET', 'POST'])
@@ -38,7 +38,7 @@ def register():
         db.session.commit()
         flash(u'Zarejestrowałeś się, witaj %s!' % form.name.data, 'success')
         login_user(the_user)
-        return redirect(request.args.get('next') or url_for('main.index'))
+        return redirect(request.args.get('next') or url_for('base.index'))
     return render_template('register.html', form=form, title=u"Zarejestrowano nowego użytkownika")
 
 
@@ -51,5 +51,5 @@ def change_password():
         db.session.add(current_user)
         db.session.commit()
         flash(u'Hasło zostało zaktualizowane.', 'info')
-        return redirect(url_for('user.detail', user_id=current_user.id))
+        return redirect(url_for('clients.detail', user_id=current_user.id))
     return render_template('user_edit.html', form=form, user=current_user, title=u"Zmiana hasła")
