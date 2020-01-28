@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from library_services import db
 from library_services.models import Book, Comment, Permission
 from flask import url_for, flash, redirect, request, abort

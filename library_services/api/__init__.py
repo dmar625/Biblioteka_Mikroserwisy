@@ -1,7 +1,6 @@
 import types
 from flask import Blueprint
 from flask_restful import Api, reqparse
-from . import user, book, comment, log, tag
 
 
 def api_route(self, *args, **kwargs):
@@ -22,4 +21,4 @@ api = Api(api_bp)
 
 api.route = types.MethodType(api_route, api)
 
-
+from . import user, book, comment, log, tag

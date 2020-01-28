@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from library_services import app, db
 from library_services.models import User, Book, Log, Role
 
@@ -6,13 +7,12 @@ app_ctx.push()
 db.create_all()
 Role.insert_roles()
 
-admin = User(name=u'darek', email='darek@gmail.com', password='password', major='administrator',
+admin = User(name=u'darek', email=u'darek@gmail.com', password=u'password', major=u'administrator',
              headline=u"Nazywam się Darek", about_me=u"Jestem ownerem tej biblioteki.")
-user1 = User(name=u'Janusz', email='james@Gmail.com', password='123456', major='Informatyka', headline=u"Zwykły clients")
-user2 = User(name=u'test', email='test@test.com', password='123456')
-user3 = User(name=u'test2', email='test2@test.com', password='123456')
-user4 = User(name=u'test3', email='test3@test.com', password='123456')
-
+user1 = User(name=u'Janusz', email=u'james@Gmail.com', password=u'123456', major=u'Informatyka', headline=u"Zwykły user")
+user2 = User(name=u'test', email=u'test@test.com', password=u'123456')
+user3 = User(name=u'test2', email=u'test2@test.com', password=u'123456')
+user4 = User(name=u'test3', email=u'test3@test.com', password=u'123456')
 
 book1 = Book(title=u"Sezon Burz", subtitle=u"Cykl wiedźmiński", author=u"Andrzej Sapkowski", isbn='9782811212995',
              tags_string=u"Fantasy", image='C:\\Users\\Dariusz Marczewski\\PycharmProjects\\Biblioteka_Mikroserwisy\\app\\static\\img\\sezon_burz.jpg',

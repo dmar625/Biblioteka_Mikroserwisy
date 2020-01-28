@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from library_services import db
 from library_services.models import Book, Log, Comment, Permission, Tag, book_tag
 from flask import render_template, url_for, flash, redirect, request, abort

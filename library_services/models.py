@@ -56,7 +56,7 @@ class User(UserMixin, db.Model):
                            lazy='dynamic',
                            cascade='all, delete-orphan')
 
-    comments = db.relationship('Komentarz',
+    comments = db.relationship('Comment',
                                backref=db.backref('clients', lazy='joined'),
                                lazy='dynamic',
                                cascade='all, delete-orphan')
