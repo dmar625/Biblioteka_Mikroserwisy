@@ -179,15 +179,10 @@ class Book(db.Model):
     translator = db.Column(db.String(64))
     publisher = db.Column(db.String(64))
     image = db.Column(db.String(128))
-    pubdate = db.Column(db.String(32))
-    pages = db.Column(db.Integer)
-    price = db.Column(db.String(16))
-    binding = db.Column(db.String(16))
     numbers = db.Column(db.Integer, default=5)
     summary = db.deferred(db.Column(db.Text, default=""))
-    summary_html = db.deferred(db.Column(db.Text))
-    catalog = db.deferred(db.Column(db.Text, default=""))
-    catalog_html = db.deferred(db.Column(db.Text))
+    #summary_html = db.deferred(db.Column(db.Text))
+    #catalog = db.deferred(db.Column(db.Text, default=""))
     hidden = db.Column(db.Boolean, default=0)
 
     logs = db.relationship('Log',
@@ -244,7 +239,7 @@ class Book(db.Model):
 
 
 db.event.listen(Book.summary, 'set', Book.on_changed_summary)
-db.event.listen(Book.catalog, 'set', Book.on_changed_catalog)
+#db.event.listen(Book.catalog, 'set', Book.on_changed_catalog)
 
 
 class Log(db.Model):
