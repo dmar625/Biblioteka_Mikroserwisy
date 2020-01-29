@@ -71,7 +71,7 @@ logs = [Log(user1, book2), Log(user1, book3), Log(user1, book4), Log(user1, book
         Log(user2, book1), Log(user2, book3), Log(user2, book5),
         Log(user3, book2), Log(user3, book5)]
 
-db.session.add_all([admin, user1, user2, user3, user4, book1, book2, book3, book4, book5, book6] + logs)
+db.session.add_all([admin, user1, user2, user3, user4] + logs)
 db.session.commit()
 
 app_ctx.pop()

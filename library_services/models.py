@@ -13,7 +13,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(64), unique=True)
+    email = db.Column(db.String(64), unique=False)
     name = db.Column(db.String(64))
     password_hash = db.deferred(db.Column(db.String(128)))
     major = db.Column(db.String(128))
@@ -171,7 +171,7 @@ class Role(db.Model):
 class Book(db.Model):
     __tablename__ = 'books'
     id = db.Column(db.Integer, primary_key=True)
-    isbn = db.Column(db.String(16), unique=True)
+    isbn = db.Column(db.String(16), unique=False)
     title = db.Column(db.String(128))
     origin_title = db.Column(db.String(128))
     subtitle = db.Column(db.String(128))
